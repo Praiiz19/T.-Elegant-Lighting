@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="T.Classic Lighting – Product details for our premium luxury chandelier and lighting collection."/>
+<meta name="theme-color" content="#0a0908"/>
+<title>Product Details | T.Classic Lighting</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💡%3C/text%3E%3C/svg%3E"/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/product.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<nav>
+<a href="index.html" style="text-decoration:none;"><h2>T.CLASSIC</h2></a>
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+<div class="nav-links" id="navLinks">
+<a href="index.html">Home</a>
+<a href="index.html#products">Collection</a>
+<a href="index.html#about">About</a>
+<a href="index.html#testimonials">Reviews</a>
+<a href="index.html#contact">Contact</a>
+</div>
+</nav>
+
+<div class="breadcrumbs reveal">
+<div class="breadcrumbs-inner">
+<a href="index.html">← Back to Collection</a>
+<span class="divider">/</span>
+<span id="crumbCategory">Lighting</span>
+<span class="divider">/</span>
+<span id="crumbName" class="active">Loading...</span>
+</div>
+</div>
+
+<section class="product-page reveal" id="productPage">
+<div class="product-loader" id="productLoader">
+<div class="loader-ring"></div>
+<p>Loading product details...</p>
+</div>
+
+<div class="product-main" id="productMain" style="display:none;">
+
+<div class="gallery-wrap">
+<div class="main-image-wrap">
+<button class="gallery-nav prev" id="prevBtn" aria-label="Previous image">‹</button>
+<img id="mainImage" src="" alt="Product" class="main-image"/>
+<button class="gallery-nav next" id="nextBtn" aria-label="Next image">›</button>
+<div class="image-counter" id="imageCounter">1 / 6</div>
+</div>
+<div class="thumbnails" id="thumbnailStrip"></div>
+</div>
+
+<div class="product-info">
+<span class="category-tag" id="pCategory">CATEGORY</span>
+<h1 class="product-title" id="pName">Product Name</h1>
+<div class="sku-row">
+<span class="sku" id="pSku">SKU: TCL-0000</span>
+<span class="availability">✓ In Stock — Nationwide Delivery</span>
+</div>
+
+<div class="price-row">
+<span class="price-label">Price:</span>
+<span class="big-price">Contact for Price</span>
+</div>
+
+<p class="lead-description" id="pDescription">Description</p>
+
+<div class="action-row">
+<a class="btn btn-primary" id="orderWaBtn" href="#" target="_blank" rel="noopener">
+💬 Order via WhatsApp
+<span class="btn-icon">→</span>
+</a>
+<a class="btn btn-outline" href="tel:+2349016453771">
+📞 Call for Pricing
+</a>
+</div>
+
+<div class="meta-features">
+<h3>✦ Key Features</h3>
+<ul id="pFeatures"></ul>
+</div>
+</div>
+</div>
+
+<div class="product-secondary" id="productSecondary" style="display:none;">
+
+<div class="specs-card">
+<div class="specs-header">
+<span class="section-subtitle" style="margin-bottom:0.5rem;">Technical Specification</span>
+<h2>Product <span class="gold-text">Specifications</span></h2>
+</div>
+<div class="specs-grid" id="specsGrid"></div>
+</div>
+
+<div class="description-card">
+<span class="section-subtitle" style="margin-bottom:0.5rem;">Detailed Description</span>
+<h2>About This <span class="gold-text">Piece</span></h2>
+<p id="pLongDescription"></p>
+
+<div class="cta-card">
+<div class="cta-text">
+<h3>Ready to Illuminate Your Space?</h3>
+<p>Contact T.Classic Lighting today for current pricing, availability and nationwide delivery.</p>
+</div>
+<div class="cta-actions">
+<a class="btn btn-primary" id="ctaWaBtn" href="#" target="_blank" rel="noopener">
+💬 WhatsApp Inquiry
+</a>
+<a class="btn btn-outline" href="index.html#products">
+← More Products
+</a>
+</div>
+</div>
+</div>
+
+<div class="inquiry-card" id="contactFormWrap">
+<span class="section-subtitle" style="margin-bottom:0.5rem;">Quick Inquiry</span>
+<h2>Ask About <span class="gold-text" id="inqName">This Product</span></h2>
+<form id="inquiryForm">
+<div class="form-row">
+<div class="form-group">
+<label for="inqName">Full Name *</label>
+<input type="text" id="inqName" name="name" placeholder="Your name" required>
+</div>
+<div class="form-group">
+<label for="inqPhone">Phone / WhatsApp *</label>
+<input type="tel" id="inqPhone" name="phone" placeholder="+234 ..." required>
+</div>
+</div>
+<div class="form-group">
+<label for="inqEmail">Email</label>
+<input type="email" id="inqEmail" name="email" placeholder="your@email.com">
+</div>
+<div class="form-group">
+<label for="inqMessage">Your Message *</label>
+<textarea id="inqMessage" name="message" placeholder="Ask about pricing, delivery dates, bulk orders, installation etc." required></textarea>
+</div>
+<button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+Send Inquiry
+<span class="btn-icon">→</span>
+</button>
+</form>
+</div>
+
+<div class="related-card">
+<span class="section-subtitle" style="margin-bottom:0.5rem;">You May Also Like</span>
+<h2>Related <span class="gold-text">Pieces</span></h2>
+<div class="product-grid" id="relatedGrid"></div>
+</div>
+
+</div>
+
+<div class="product-error" id="productError" style="display:none;">
+<div class="error-icon">⚠</div>
+<h2>Product Not Found</h2>
+<p>The product you're looking for doesn't exist or has been moved.</p>
+<a class="btn btn-primary" href="index.html#products">← Back to Collection</a>
+</div>
+</section>
+
+<footer>
+<div class="footer-brand">T.CLASSIC LIGHTING</div>
+<div class="divider"></div>
+<p>© 2026 T.Classic Lighting. All rights reserved.</p>
+<p>Director: Stanley Chigboogu Chukwuobasi</p>
+</footer>
+
+<div class="sticky-order">
+<a href="https://wa.me/2349016453771" target="_blank" rel="noopener">
+🛒 Order Your Luxury Lighting Today on WhatsApp →
+</a>
+</div>
+
+<a class="whatsapp-float" href="https://wa.me/2349016453771" target="_blank" rel="noopener" aria-label="WhatsApp">
+💬
+</a>
+
+<script src="js/product.js"></script>
+</body>
+</html>
